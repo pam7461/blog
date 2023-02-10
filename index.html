@@ -14,27 +14,85 @@
             border:none;
             padding:0;
         }
+        a{
+            color:black;
+            text-decoration:none;
+        }
+
+
+        /* Grid */
+        .col01{width:75px;}
+        .col02{width:165px;}
+        .col03{width:255px;}
+        .col04{width:345px;}
+
+
+
+
+
+
         #wrap{
             width:375px;
             height:812px;
-            margin:0 auto;            
-            
+            margin:0 auto;
             background-image:radial-gradient(circle,rgba(157,206,141,0.1),rgb(157, 206, 141));
         }
+
+        /* HEADER 스타일 시작 */
         header{
             width:375px;
             height:63px;
-            background-color:red;
+            padding:16px 0 0 15px;
+        }        
+        h1 a{
+            font-family:'Noto Serif KR';
+            font-weight:900;
+            font-size:20px;                            
         }
+        /* HEADER 스타일 끝 */
+
+        /* SECTION 스타일 시작 */
+        section{
+            width:375px;
+            height:679px;
+        }
+        /* SECTION 스타일 끝 */
+
+        /* FOOTER 스타일 시작 */
+        footer{
+            width:375px;
+            height:70px;
+            padding:15px;
+        }
+        footer div{
+            height:40px;
+            margin-right:15px;
+            border-radius:8px;
+            background-color:#2e7a15;
+            float:left;
+        }
+        footer .mr0{
+            margin-right:0;
+        }
+        /* FOOTER 스타일 끝 */
+
     </style>
 </head>
 <body>
     <div id="wrap">
         <header>
-            <h1><a href="./index.html">HwanJun</a></h1>
+            <h1>
+                <a href="./index.html">HwanJun</a>
+            </h1>
         </header>
-        <section>패이지 컨텐츠 영역</section>
-        <footer>공통 하단영역</footer>
+        <section>
+            패이지 컨텐츠 영역
+        </section>
+        <footer>
+            <div class="col02"><a href="#">사진첩</a></div>
+            <div class="col01"><a href="#">게시판</a></div>
+            <div class="col01 mr0"><a href="#">이웃</a></div>
+        </footer>
     </div>
 </body>
 </html>
