@@ -14,16 +14,27 @@
             border:none;
             padding:0;
         }
-        div{
+        #wrap{
             width:375px;
             height:812px;
             margin:0 auto;            
-            /* background-image:url(./images/bg-img.jpg); */
-            background-image:radial-gradient(circle,rgba(157,206,141,0.1),#9dce8d);
+            
+            background-image:radial-gradient(circle,rgba(157,206,141,0.1),rgb(157, 206, 141));
+        }
+        header{
+            width:375px;
+            height:63px;
+            background-color:red;
         }
     </style>
 </head>
 <body>
-    <div>블로그</div>
+    <div id="wrap">
+        <header>
+            <h1><a href="./index.html">HwanJun</a></h1>
+        </header>
+        <section>패이지 컨텐츠 영역</section>
+        <footer>공통 하단영역</footer>
+    </div>
 </body>
 </html>
