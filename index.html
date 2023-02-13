@@ -19,6 +19,9 @@
             color:black;
             text-decoration:none;
         }
+        img{
+            width:100%;
+        }
 
 
         /* Grid */
@@ -61,6 +64,39 @@
         section{
             width:375px;
             height:679px;
+        }
+        .sec-contents{
+            padding-top:200px;
+        }
+        .img-box{
+            width:165px;
+            height:165px;
+            margin:0 auto;
+            border-radius:50%;
+            background-color:red;
+            overflow:hidden;
+            position:relative;
+        }
+        .img-box img{
+            /* width:175%; */
+            width:288px;
+            position:absolute;
+            left: -51px;
+            top: -18px;
+        }
+        section h2{
+            font-family:'Noto Serif KR';
+            font-weight:700;
+            font-size:36px;
+            color:#333333;
+            text-align:center;
+        }
+        section p{
+            font-family:'Noto Sans KR';
+            font-weight:400;
+            font-size:12px;
+            color:#333333;
+            text-align:center;
         }
         /* SECTION 스타일 끝 */
 
@@ -111,7 +147,13 @@
             </div>
         </header>
         <section>
-            패이지 컨텐츠 영역
+            <div class="sec-contents">
+                <div class="img-box">
+                    <img src="./images/cat01.jpg" alt="고양이">
+                </div>                
+                <h2>jo hwanjun</h2>
+                <p>어서오세요! 좋은 하루 입니다.</p>
+            </div>
         </section>
         <footer>
             <div class="col02"><a href="./photos.html">사진첩</a></div>
