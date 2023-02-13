@@ -78,42 +78,28 @@
         .sec-contents{
             padding-top:30px;
         }
-        .photo-box{
-            float:left;
-            width:50%;
-            height:188px;
-            overflow:hidden;
+        .img-box{
             position:relative;
         }
-        .photo-box .img-box{
-            position:relative;
-            height:100%;
-        }
-        .photo-box .img-box img{
-            width:200%;
+        .img-box div{
+            width:40px;
+            height:40px;
+            border:10px solid rgba(46,122,21,0.2);
+            border-right:none;
+            border-bottom:none;
             position:absolute;
-            left:50%;
-            top:50%;
-            transform:translate(-50%,-50%);
+            left:15px;
+            top:calc(50% - 20px);
+            transform:rotate(-45deg);
+            text-indent:-999999px;
         }
-        .photo-box h3{
-            width:100%;
-            height:100%;
-            padding-top:50px;
-            position:absolute;
-            left:0;
-            top:0;
-            background-color:rgba(85,187,51,0.5);
-            font-family:'Noto Sans KR';
-            font-weight:400;
-            font-size:16px;
-            color:#000000;
-            text-align:center;
-            display:none;
+        .img-box .btn-next{
+            left:auto;
+            right:15px;
+            transform:rotate(135deg);
+            border-color:rgb(46,122,21);
         }
-        .photo-box:hover h3{
-            display:block;
-        }
+        
         
         /* SECTION 스타일 끝 */
 
@@ -165,56 +151,11 @@
         </header>
         <section>
             <div class="sec-contents">
-               <h2>사진첩</h2> 
-                <div class="photo-box">
-                        <div class="img-box">
-                            <img src="./images/cat02.jpg" alt="고양순">
-                        </div>
-                        <h3>
-                            <a href="select-photo.html">고양순의 삐진 모습</a>
-                        </h3>
-                </div>
-                <div class="photo-box">
-                    <div class="img-box">
-                        <img src="./images/cat03.jpg" alt="고양순">
-                    </div>
-                    <h3>고양순의 삐진 모습2</h3>
-                </div>
-                <div class="photo-box">
-                    <div class="img-box">
-                        <img src="./images/cat04.jpg" alt="고양순">
-                    </div>
-                    <h3>고양순의 삐진 모습3</h3>
-                </div>
-                <div class="photo-box">
-                    <div class="img-box">
-                        <img src="./images/cat05.jpg" alt="고양순">
-                    </div>
-                    <h3>고양순의 삐진 모습4</h3>
-                </div>
-                <div class="photo-box">
-                    <div class="img-box">
-                        <img src="./images/cat06.jpg" alt="고양순">
-                    </div>
-                    <h3>고양순의 삐진 모습5</h3>
-                </div>
-                <div class="photo-box">
-                    <div class="img-box">
-                        <img src="./images/cat07.jpg" alt="고양순">
-                    </div>
-                    <h3>고양순의 삐진 모습6</h3>
-                </div>
-                <div class="photo-box">
-                    <div class="img-box">
-                        <img src="./images/cat08.jpg" alt="고양순">
-                    </div>
-                    <h3>고양순의 삐진 모습7</h3>
-                </div>
-                <div class="photo-box">
-                    <div class="img-box">
-                        <img src="./images/cat09.jpg" alt="고양순">
-                    </div>
-                    <h3>고양순의 삐진 모습8</h3>
+                <h2>고양순의 삐진모습</h2> 
+                <div class="img-box">
+                    <img src="./images/cat02.jpg" alt="">
+                    <div class="btn-prev">이전</div>
+                    <div class="btn-next">이후</div>
                 </div>
             </div>
         </section>
