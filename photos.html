@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hwanjun Blog</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/default-style.css">
+    <style>
+        /* CSS Reset */
+        *{
+            box-sizing:border-box;
+            margin:0;
+            border:none;
+            padding:0;
+        }
+        a{
+            color:black;
+            text-decoration:none;
+        }
+        img{
+            width:100%;
+        }
+
+
+        /* Grid */
+        .col01{width:75px;}
+        .col02{width:165px;}
+        .col03{width:255px;}
+        .col04{width:345px;}
+
+        #wrap{
+            width:375px;
+            height:812px;
+            margin:0 auto;
+            background-image:radial-gradient(circle,rgba(157,206,141,0.1),rgb(157, 206, 141));
+        }
+
+        /* HEADER 스타일 시작 */
+        header{
+            width:375px;
+            height:63px;
+            padding:0px 15px 0 15px;
+        }    
+        h1{
+            float:left;
+        }
+        .search{
+            margin-top:17px;
+            float:right;            
+        }
+        .no-show{
+            display:none;
+        }
+        h1 a{
+            font-family:'Noto Serif KR';
+            font-weight:900;
+            font-size:20px;                            
+        }
+        /* HEADER 스타일 끝 */
+
+        /* SECTION 스타일 시작 */
+        section{
+            width:375px;
+            height:679px;
+            background-color:#ffffff;
+            overflow:scroll;
+        }
+        .sec-contents{
+            padding-top:30px;
+        }
+        .photo-box{
+            float:left;
+            width:50%;
+            height:188px;
+            overflow:hidden;
+            position:relative;
+        }
+        .photo-box h3{
+            width:100%;
+            height:100%;
+            padding-top:50px;
+            position:absolute;
+            left:0;
+            top:0;
+            background-color:rgba(85,187,51,0.5);
+            font-family:'Noto Sans KR';
+            font-weight:400;
+            font-size:16px;
+            color:#000000;
+            text-align:center;
+            display:none;
+        }
+        .photo-box:hover h3{
+            display:block;
+        }
+        
+        /* SECTION 스타일 끝 */
+
+        /* FOOTER 스타일 시작 */
+        footer{
+            width:375px;
+            height:70px;
+            padding:15px;
+        }
+        footer div{
+            height:40px;
+            margin-right:15px;
+            border:2px solid #2e7a15;
+            padding-top:7px;
+            border-radius:8px;
+            background-color:#2e7a15;
+            float:left;
+            text-align:center;
+        }
+        footer .mr0{
+            margin-right:0;
+        }
+        footer a{
+            font-family:'Noto Sans KR';
+            font-weight:700;
+            font-size:16px;
+            color:#ffffff;
+        }
+        footer .inv{            
+            background-color:#ffffff;
+        }
+        footer .inv a{
+            color:#2e7a15;
+        }
+
+        /* FOOTER 스타일 끝 */
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>
+                <a href="./index.html">HwanJun</a>
+            </h1>
+            <div class="search">
+                <img src="./images/search.png" alt="검색버튼">
+            </div>
+        </header>
+        <section>
+            <div class="sec-contents">
+               <h2>사진첩</h2> 
+                <div class="photo-box">
+                        <div class="img-box">
+                            <img src="./images/cat02.jpg" alt="고양순">
+                        </div>
+                        <h3>고양순의 삐진 모습</h3>
+                </div>
+                <div class="photo-box">
+                    <div class="img-box">
+                        <img src="./images/cat03.jpg" alt="고양순">
+                    </div>
+                    <h3>고양순의 삐진 모습2</h3>
+                </div>
+                <div class="photo-box">
+                    <div class="img-box">
+                        <img src="./images/cat04.jpg" alt="고양순">
+                    </div>
+                    <h3>고양순의 삐진 모습3</h3>
+                </div>
+                <div class="photo-box">
+                    <div class="img-box">
+                        <img src="./images/cat05.jpg" alt="고양순">
+                    </div>
+                    <h3>고양순의 삐진 모습4</h3>
+                </div>
+                <div class="photo-box">
+                    <div class="img-box">
+                        <img src="./images/cat06.jpg" alt="고양순">
+                    </div>
+                    <h3>고양순의 삐진 모습5</h3>
+                </div>
+                <div class="photo-box">
+                    <div class="img-box">
+                        <img src="./images/cat07.jpg" alt="고양순">
+                    </div>
+                    <h3>고양순의 삐진 모습6</h3>
+                </div>
+                <div class="photo-box">
+                    <div class="img-box">
+                        <img src="./images/cat08.jpg" alt="고양순">
+                    </div>
+                    <h3>고양순의 삐진 모습7</h3>
+                </div>
+                <div class="photo-box">
+                    <div class="img-box">
+                        <img src="./images/cat09.jpg" alt="고양순">
+                    </div>
+                    <h3>고양순의 삐진 모습8</h3>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="col02 inv"><a href="./photos.html">사진첩</a></div>
+            <div class="col01"><a href="./notice.html">게시판</a></div>
+            <div class="col01 mr0"><a href="./follower.html">이웃</a></div>
+        </footer>
+    </div>
+</body>
+</html>
